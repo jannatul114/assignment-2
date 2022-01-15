@@ -6,8 +6,27 @@
  /*--common styles and utilities-- */
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
+
+/* navber */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 80%;
+}
+
+nav h3{
+    font-weight: bold;
+    font-size: 24px;
+}
 
 /* top section */
 
@@ -22,7 +41,7 @@ body{
     width: 85%;
     display: flex;
     align-items: center;
-    height: 100vh;
+    
 }
 
 .half-width h1{
@@ -30,6 +49,14 @@ body{
     font-weight: bold;
     font-size: 52px;
     line-height: 70px;
+    width: 50%;
+}
+
+
+.half-width p{
+    color: #787885;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .half-width button{
@@ -44,6 +71,11 @@ body{
 
 /* second section */
 
+
+.container{
+    margin-top: 115px;
+}
+
 .section-title{
     text-align: center;
     color:#3A3A3A;
@@ -52,17 +84,18 @@ body{
 }
 
 .second-section{
-    margin-top: 30px;
-    width: 80%;
+    width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
  
 }
 
 .columns{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
 }
 
 .column{
@@ -71,24 +104,23 @@ body{
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    width: 329px;
+    width: 300px;
    
 }
 
 .column img{
     width: 300px;
     height: 256px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
+ 
 }
 
 
 .flex-items{
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .column h2{
@@ -109,5 +141,51 @@ body{
     font-size: 14px;
     color: #FB8200;
 }
+
+.see-more{
+    color: #E02C6DDE;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    margin-right: 30px;
+}
+
+
+/* footer */
+
+footer{
+    margin-top: 100px;
+    background-color: #0A0826;
+    margin-bottom: 0px;
+    text-align: center;
+    height: 280px;
+    color: #FFFF;
+}
+
+footer h2{
+    
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    
+}
+
+.footer-text{
+    padding-top: 50px;
+}
+
+.icons i{
+    margin-left: 20px;
+}
+
+/* mediaquary mobile device */
+
+@media only screen and (max-width: 688px) {
+   
+}
+
+
+
 
 
