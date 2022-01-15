@@ -158,18 +158,20 @@ nav h3{
 
 .column{
     margin-top: 50px;
-    
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     width: 300px;
-   
+}
+
+.column:hover{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.514);
+    transition: 0.5s;
 }
 
 .column img{
-    width: 300px;
-    height: 256px;
     
+    height: 256px;
 }
 
 .flex-items{
