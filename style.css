@@ -52,6 +52,10 @@ nav h3{
     width: 50%;
 }
 
+.half-width img:hover{
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
 
 .half-width p{
     color: #787885;
@@ -67,7 +71,61 @@ nav h3{
     border: none;
     font-weight: bold;
     font-size: 16px;
+    animation-name: button-animation;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    cursor: pointer;
 }
+
+
+
+/* button animation */
+@keyframes button-animation {
+    0%{
+        margin-left: 0px;
+        color: #FFFF;
+        background-color: #E02C6D;
+    }
+    10%{
+        margin-left: 15px;
+        color: #FFFF;
+        background-color: #E02C6D;
+    }
+
+    25%{
+        margin-left: 50px;
+        color: #FFFF;
+        background-color: #E02C6D;
+    }
+    
+    50%{
+        margin-left: 75px;
+        transform: rotate(360deg);
+        transition: transform 1s;
+        color:#E02C6D;
+        background-color: #FFFF;
+    }
+
+    75%{
+        margin-left: 15px;
+        transform: rotate(360deg);
+        transition: transform 1s;
+        color: #FFFF;
+        background-color: #E02C6D;
+    }
+
+    100%{
+        margin-left: 0px;
+        color: #FFFF;
+        background-color: #E02C6D;
+        
+    }
+}
+
+
+
 
 /* second section */
 
@@ -190,6 +248,7 @@ footer h2{
    .text-part{
        margin: 0px;
        width:80%;
+       text-align: center;
    }
    .half-width img{
        margin-top: 30px;
