@@ -169,7 +169,7 @@ nav h3{
 .column img{
     width: 300px;
     height: 256px;
-    margin-left: 20px;
+    
 }
 
 .flex-items{
@@ -236,18 +236,45 @@ footer h2{
     margin-left: 20px;
 }
 
+
+.input-sec input{
+    padding: 15px;
+    outline: none;
+}
+
+.input-sec button{
+    background-color: #E02C6D;
+    color: #FFFF;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 13px 15px;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
 /* mediaquary mobile device */
 
-@media only screen and (max-width: 688px) {
+@media only screen and (max-width: 576px) and (min-width: 0px) {
 
    .top-section{
        display: flex;
        flex-direction: column;
     
    }
+   .text-part h1{
+       text-align: center;
+   }
    .text-part{
        margin: 0px;
-       width:80%;
+       width:70%;
        text-align: center;
    }
    .half-width img{
@@ -266,7 +293,6 @@ footer h2{
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
-     
     }
 
     .column{
@@ -285,7 +311,7 @@ footer h2{
 
 /* responsive for ipad tab */
 
-@media only screen and (max-width: 1188px) and (min-width: 689px) {
+@media only screen and (max-width: 768px) and (min-width: 577px) {
     .top-section{
        display: flex;
        flex-direction: column;
