@@ -218,7 +218,7 @@ footer h2{
         border-radius: 5px;
         width: 350px;
     }
-   .header, nav{
+   .header{
        display: none;
    }
 }
@@ -229,15 +229,27 @@ footer h2{
 @media only screen and (max-width: 1188px) and (min-width: 689px) {
     .top-section{
        display: flex;
+       flex-direction: column;
        justify-content: center;
        align-items: center;
-       background-color: #FB8200;
+       
     }    
 
     .columns{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
         }
+
+    .see-more{
+        text-align: right;
+    }
+
+    .half-width img{
+        margin-top: 30px;
+        width:90%;
+    }
+
+    
 }
 
 
