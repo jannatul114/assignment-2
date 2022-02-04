@@ -37,6 +37,11 @@ nav h3{
    
 }
 
+main{
+    max-width: 100%;
+}
+
+
 .top-section{
     width: 85%;
     display: flex;
